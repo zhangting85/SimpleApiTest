@@ -21,7 +21,7 @@ output：
 
 
 ## 我做了什么：
-### Feature 1 （总代码量不算注释一共15行）：json文件模板下的测试数据功能：
+### Feature 1 （15行）：json文件模板下的测试数据：
 很多测试框架选择把数据放在：Excel里，CSV里，YAML里，源代码里。
 但这些都不是我想要的，Excel太笨重，CSV很土，YAML里太难调，源代码里太难读。
 
@@ -42,9 +42,9 @@ ok，如果要发送的是json数据，要测的是rest API，那么数据我就
 
 比如这样：
 
-@xxxxx(data=[("user1,"password1"),("user2","password2")])
-def test_user_login(data):
-    login(data)
+`<addr>`@xxxxx(data=[("user1,"password1"),("user2","password2")])
+`<addr>`def test_user_login(data):
+`<addr>`    login(data)
 
 
 上面这个是示意的伪代码，相信用过pytest或者其他测试框架的你大概能明白我的意思吧。
