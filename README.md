@@ -1,5 +1,5 @@
-# SimpleApiTest
-一个简单的接口测试框架
+SimpleApiTest 一个简单的接口测试框架For python和rest
+======
 
 ## 我想要这样的功能：
 1. 纯python实现，方便打断点调试。可与robot、pytest、unittest等库集成
@@ -42,9 +42,9 @@ ok，如果要发送的是json数据，要测的是rest API，那么数据我就
 
 比如这样：
 
-`<addr>` @xxxxx(data=[("user1,"password1"),("user2","password2")])
-`<addr>` def test_user_login(data):
-`<addr>`     login(data)
+        @xxxxx(data=[("user1,"password1"),("user2","password2")])
+        def test_user_login(data):
+            login(data)
 
 
 上面这个是示意的伪代码，相信用过pytest或者其他测试框架的你大概能明白我的意思吧。
